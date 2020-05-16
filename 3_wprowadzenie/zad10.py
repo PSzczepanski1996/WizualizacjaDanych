@@ -1,12 +1,12 @@
 def lista_zakupow(**rzeczy):
-    return len(rzeczy)
+    return sum(rzeczy.values())
 
 
 produkty = {
-    'ziemniaki': 'kg',
-    'chleb': 'kg',
-    'lody': 'sztuki',
-    'napoje': 'sztuki',
+    'ziemniaki': 1,
+    'chleb': 3,
+    'lody': 5,
+    'napoje': 4,
 }
 
 print(lista_zakupow(**produkty))
